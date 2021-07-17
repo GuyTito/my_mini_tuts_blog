@@ -1,0 +1,14 @@
+How to add Bootstrap 5 to Vue 3
+method 1 
+select sass when creating project
+follow method 2 without installing sass loader
+
+method 2
+- install Bootstrap 5 using npm [ npm install bootstrap@next ]
+- import bootstrap js and css in main.js 
+[ import "/node_modules/@popperjs/core/dist/umd/popper.min.js" ]
+[ import "/node_modules/bootstrap/dist/js/bootstrap.min.js" ]
+[ import "bootstrap/dist/css/bootstrap.min.css"; ]
+- To customise Bootstrap, you can create a .scss file in src/assests folder and write your scss. Import the scss file in main.js [import './assets/style/main.scss';]. Also, you can write scss in the style tag in vue components
+- install sass loader 
+- restart the server

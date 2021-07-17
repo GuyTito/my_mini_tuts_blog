@@ -1,0 +1,43 @@
+Grid consists of:
+- A container
+	- A row
+		* One or more column classes
+
+div.container
+	div.row
+		div.col-xx-yy
+
+xx = viewport size [xs, sm, md, lg]
+yy = number of columns you want to occupy
+
+In Bootstrap grid columns, 
+3 columns is 25% width
+6 columns is 50% width
+9 columns is 75% width
+12 columns is 100% width
+
+So examples,
+col-xs-12 = if on extra small sizes, take the full with of the device which is all the 12 columns (so that the pics or div content is stacked vertically on the phone/mobile screen))
+
+col-sm-8 = if on small devices or screens, take 8 columns of the full width of the screen or devices
+
+col-md-4 = if on medium screen sizes of devices, just take 4 columns (so that you can stack other content like pictures beside it)
+
+col-lg-3 = if on large screen size, take up 3 colunms or 25% of the screen size
+
+<img src="pic.jpg" class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+
+so if you look at it, the pattern is such that small viewport sizes require more columns than the larger viewport sizes and you know why...
+
+so make sure that the sum of the number of columns for each div or pic on particular screen/viewport size does not exceed 12 columns or the contents you want to sit side by side should not exceed 12 columns
+
+Also, Bootstrap has push pull:
+col-XX-push-YY -> on XX screen size, move YY number of columns to the right
+col-XX-pull-YY-> to the left
+
+You hide and show content using the ff:
+hidden-XX  -> hide content on XX screen size
+visible-XX  -> show content on XX screen size
+sr-only -> hide except only for screen readers
+
+Bootstrap is mobile first, larger screen sizes inherit values from smaller screens. Meaning, if you define for md, it applies to lg too. if you define for xs, it applies to all screens bigger than xs. Therefore, the default view is xs which 0 - 312px. sm is 312px and above. md and above. lg and above

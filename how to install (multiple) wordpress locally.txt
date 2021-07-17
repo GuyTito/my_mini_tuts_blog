@@ -1,0 +1,7 @@
+- go to wordpress.org and download zip file
+- unzip in xamp/htdocs/[New_folder]
+- create db for this wordpress site in mysql
+- open localhost/[New_folder] in browser
+- fill the form and follow the process
+
+NB: use these steps for multiple wordpress sites. Just create another db in mysql and folder in htdocs

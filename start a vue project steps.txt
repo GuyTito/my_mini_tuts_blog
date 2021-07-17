@@ -1,0 +1,10 @@
+start a vue project steps
+- vue create project_name
+- Select any option but usually select the manual option
+- select Router, Vuex and unselect Linter
+- Select version
+- Yes to history mode
+- Select dedicated config file
+- No to preset for future
+- open the project
+- npm run serve

@@ -1,0 +1,39 @@
+create multiple column cursors
+[SUBLIME]: place cursor, hold Shift, right click and drag
+[VS CODE]: place cursor, hold Shift+Alt and left click and drag
+
+Copy Line Up/Down
+[VS CODE]: Shift + Alt + Up/Down
+[SUBLIME]: Ctrl–Shift–D
+
+Move Lines Up/Down 
+[VS CODE]: Alt + Up/Down
+
+Select a line
+[VS CODE]: Ctrl + L
+
+Copy or cut a line
+[VS CODE]: Ctrl + C or Ctrl + X 
+
+select a line
+place cursor and Ctrl–L or triple left click line
+
+cycle thru opened tabs
+[VS CODE]: ctrl + tab key
+[SUBLIME]: ctrl + tab key
+
+go back/forward to previous page
+[chrome]: alt + left/right
+
+import a class thru selected word
+[vs code]: select word, then ctrl + space
+
+select all instances of a selected word
+[vs code]: Ctrl + Shift + L
+[SUBLIME]: Alt + F3
+
+wrap html tags around selected word
+[vs code]: have htmltagwrap ext installed, select word, Alt + W. press spacebar to add attributes 
+
+search everywhere project wide
+[vs code]: Ctrl + Shift + F

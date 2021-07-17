@@ -1,0 +1,16 @@
+how to deal with merged conflicts of generated compiled assets in public folder in laravel vue js
+
+
+stop running node and artisan serve
+delete css and js in  public folder
+write "/public/js/*" and "/public/css/*" in .gitignore file
+git commit -m "ignore compiled asset"
+git push
+npm run watch
+
+
+rm public/js/app.js
+echo "/public/js/app.js" >> .gitignore
+git commit -m "ignore compiled asset"
+git push
+npm run watch
