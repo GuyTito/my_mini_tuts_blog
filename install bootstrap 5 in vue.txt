@@ -1,0 +1,7 @@
+install bootstrap 5 in vue
+
+- npm install --save @popperjs/core bootstrap@next
+
+- import these in main.js
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
