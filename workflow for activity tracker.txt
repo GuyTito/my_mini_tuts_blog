@@ -1,0 +1,2 @@
+workflow for activity tracker
+- before you commit, terminate the "npm run watch". this is done to prevent conflict of compiled assets between branches. therefore, the generated files are pushed to the repo which is not the right thing to do. but its done because for some reason i cannot make heroku to generate compiled js files from its vue files within a laravel vue app.
