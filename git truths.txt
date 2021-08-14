@@ -1,0 +1,5 @@
+git truths
+- commits are just changes
+- merging commits means merging just the changes not whole projects
+- so a file in two branches can have different contents and can be merged like a new content has been added and not replaced
+- merging in itself is a commit
