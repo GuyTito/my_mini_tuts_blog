@@ -1,0 +1,21 @@
+linkedin series
+- your title must say what you do. be specific. e.g aspiring laravel developer finishing bootcamp
+- summary of your resume 3 points. 1. what you do. e.g i develop notifications on fb 2. main projects you've worked on and their langs 3. technologies you've used
+- remove the word "aspiring". youre already a developer. just state the specific technologies you use. if youre a .net developer, put it there
+- Software Engineer | React, Express, Mongo, Node Js. Make it easy for recruiters to get your info. the minute you make it difficult, they will move on
+- a good headshot, consistent across all platforms, smiling, warm, my banner will have some form of "consistent improvement"
+- short  bio(about) years of experience and roles targeting e.g years of experience and tech, targeting ui specific roles. or . these are the tech i use day to day etc. tools and tech, what you do
+- put in the title what you wanna be called for
+- featured section should show your portfolio, your work, code sample, github, projects, finished work, etc #100dayofcode is for twitter and ongoing projects
+- experience section. the job title should match the profile title. keyword. it should be industry standard. the job description should list the things you achieved when you worked there. there should be comparison and your impact that made it better
+- education and certs or licenses dont really matter
+- skills and endorsements dont matter that much. but its good if a lot of people talk about you
+- recommendations are good. the more the better
+- interests. are you following companies that are relevant? follow companies recuiters are hiring for.
+- IT Consultant is better than self-employed
+- Get recommendation and references. throw in your projects and github
+- (Activity)Provide content. show what you have done day to day, what youve learned, motivational quotes, thoughts, what youre learning, volunteers, day to day something for the content, meetups, events, etc
+- network, network, network, make human connection, cold dm people(developers, hiring managers, recruiters, etc) in companies offering jobs, ask them if they have vacancies, dont hey go straight to the question, find something on their profile and connect with people
+- become an industry person by speaking at events, meetups, connect with people, things you do to improve your productivity etc
+- identify a company with a vacancy, find them on linkedin, find their developers, and recruiters or hiring managers and dm them about the vacancy and network with them
+- take skill assessment, connect with ycombinator startup founders, connect with cto of companies you want to work at.
