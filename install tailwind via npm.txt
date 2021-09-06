@@ -1,0 +1,22 @@
+install tailwind via npm
+
+//initialise npm in folder
+npm init -y
+
+//install tailwind
+npm i tailwindcss
+
+//add these to style.css in src folder
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//create css file in dist folder which will be the built css file from the one in the src folder
+
+//add this to scripts in package.json
+"build:css": "tailwind build -i src/style.css -o dist/style.css"
+
+//buld taildwindcss. this will generate normal css in the dist folder
+npm run build:css
+
+//link built css in index.html head tag
