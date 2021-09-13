@@ -37,3 +37,6 @@ wrap html tags around selected word
 
 search everywhere project wide
 [vs code]: Ctrl + Shift + F
+
+click class name to its file
+[vscode]: (select class name) Ctrl + click on class name
