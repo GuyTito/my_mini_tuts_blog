@@ -1,0 +1,9 @@
+storing boolean with checkbox in laravel
+
+form: <input type="checkbox" name="is_verified" id="is_verified" value="1" {{ old('is_verified') ? 'checked="checked"' : ''}}>
+
+validation: 'is_verified' => 'boolean',
+
+value: $fields['is_verified'] = isset($fields['is_verified']);
+
+table column: $table->boolean('is_verified')->default(false);
