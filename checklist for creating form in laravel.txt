@@ -1,0 +1,11 @@
+checklist for creating form in laravel
+
+create html form
+	name attr
+	old value
+	error for each input
+	session for success
+create route(route shld not be equal to a folder in public)
+create controller method
+create model if needed
+mass assign input values
