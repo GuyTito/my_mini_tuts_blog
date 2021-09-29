@@ -1,0 +1,11 @@
+how to collaborate on github
+fork the project
+create a branch
+make changes
+commit changes
+publish/push the branch(don't merge to main locally)
+create pull request
+then it may be merged, commented on etc
+if it is not merged make changes to code and push again
+checkout to main branch to check for updates/merges
+pull it to update it
