@@ -1,0 +1,4 @@
+https://stackoverflow.com/questions/41205844/how-can-i-modify-a-migration-in-laravel
+
+
+https://laracasts.com/discuss/channels/laravel/how-to-updatemerge-database-on-production-database
