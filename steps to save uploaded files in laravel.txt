@@ -1,0 +1,12 @@
+steps to save uploaded files in laravel
+
+- uploaded file is an of the UploadFile Class which wraps around the file and presents us with methods and properties to work on the file
+- $image_path = $request['image']->store('pictures', 'public'). this returns the path to the image in the storage->app->public->pictures->image.jpg
+the first parameter of the store method creates a folder of the same name in storage/app/public folder. the 2nd folder indicates the driver where the file is stored to be referenced to. in our case, local storage
+- $image_path is then stored in the db. so the path to the file is rather stored in the db not the file itself
+- this part of the project is not accessible to the users so we need to create a link from the public folder in the root(public/storage) to the storage/app/public (this can be configured in the filesystems.php config file)  folder using the ff artisan command: 
+php artisan storage:link
+- the file is accessible by the ff link:
+<img src="{{ asset('/storage/' . $model->column_of_image_path) }}"/>
+this creates the ff link
+domain.com/storage/pictures/image_path
