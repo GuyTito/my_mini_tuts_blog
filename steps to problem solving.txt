@@ -1,0 +1,34 @@
+Steps to solve programming problems
+
+- Observe the problem and understand it. Don't jump into coding yet. Clarify all parts of the problem. Visualise and understand it in your mind.
+
+- What is/are the input(s). What is the data type of input? int, string, array(data type of array elements), etc. Same applies to output. What is the end goal? What are you outputting? Check if it's valid input and what to do if invalid.
+
+- Solve the problem. I mean, solve it like a human being i.e the way you approach problems in your daily life. (If you need to understand a concept to solve the problem then do your research.)
+Write down the steps of your solution in plain English(pseudocode). This is the same as dividing your problem into smaller chunks(steps). The steps should be simple.
+
+- Now that you have solved the problem, implement your solution in code i.e represent the above steps in programming syntax. The syntax should be simple, mechanical even if it looks unrefined. 
+
+- If you can't implement the solution, finish with the easier parts. Then come back and tackle it. If not, look for implementations outside.
+
+- Test your solution. Test all possible cases and edge cases. Adapt your code to them. Make improvements to the code's running time i.e its efficiency and performance in terms of large input (n) which is an important subset of a worst case scenario.
+
+- Refactor/refine your code to avoid duplication, etc to make sure better ways of code are written. one-line code, DRY, SOLID, KISS etc.
+
+- Present your solution. Look at other people's solution to the problem, learn from them and use it to improve yours and future problems.
+
+
+
+
+Scientific method 
+The very same approach that scientists use to understand the natural world is effective for studying the running time of programs:
+
+■ Observe some feature of the natural world, generally with precise measurements. Hypothesize a model that is consistent with the observations.
+
+■ Predict events using the hypothesis.
+
+■ Verify the predictions by making further observations.
+
+■ Validate by repeating until the hypothesis and observations agree.
+
+One of the key tenets of the scientific method is that the experiments we design must be reproducible, so that others can convince themselves of the validity of the hypothesis. Hypotheses must also be falsifiable, so that we can know for sure when a given hypothesis is wrong (and thus needs revision). As Einstein famously is reported to have said ("No amount of experimentation can ever prove me right; a single experiment can prove me wrong"), we can never know for sure that any hypothesis is absolutely correct; we can only validate that it is consistent with our observations.
