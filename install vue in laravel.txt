@@ -1,0 +1,18 @@
+install vue in laravel
+- npm install vue -D
+- in webpack.mix.js, add .vue()
+- in resources/js/app.js, import Vue from 'vue'
+- in resources/js, create App.vue. you can create components and view folders here
+- in App.vue you can import components and views from resources/js. App.vue as source of entry
+- import App from './App.vue'; in app.js
+	const app = new Vue({
+	  el: '#app',
+	  components: { App },
+	})
+  you can import stuff in app.js like router, vuex etc. check out activity_tracker project
+- in main blade file, add the ff
+	<div id="app">
+    	<app></app>
+  	</div>
+  	<script src="{{ mix('js/app.js') }}" defer></script>
+- npm run dev/watch to compile assets and/or watch compiled assets
