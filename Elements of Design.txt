@@ -1,0 +1,76 @@
+Elements of Design
+-------------------
+
+Layout
+-------
+* Visual Hierachy: The use of tools such as sizes, positioning(we read from top to down, left to right), negative/white space, color(saturation, hue, light/dark contrast, opposite colors for contrast), perspective(illusion of distance) to indicate importance/hierachy between elements
+Marketing Hierachy: attract,  interest, deliver message thru copy, call to action
+
+https://zevendesign.com/designers-guide-to-visual-hierarchy/
+
+* Alignment
+The use of diffenrent types of grids to order items. The use of modular, column etc grids. use of rule of thirds, golden ratio to align items and visual hierachy
+
+* Proximity: group similar things together and different things far apart. like logo is far apart from navigation button. group call to action buttons on the hero page
+
+
+
+Typography
+-----------
+typography is about personality. it can playful, strict and fancy
+
+serif for print media cos of high resolution
+sans serif for screens cos of low resolution but this narrative is changing due to high resolution on screens
+
+serif has 3 distinct styles. oldstyles, modern and slabs
+oldstyle for classic personality and refined taste as used in restaurants, law firms, music etc
+modern style good gor headlines and big texts in fashion, luxury, refined, serious, modern
+slab for strong and mechaninal reserved for headings and big texts
+
+sans serif are rather versatile and for general use, best for paragraph texts
+
+display for headings and not used too much. looks like chalk on board
+
+script for handwriting. playful handwritten  for children. not good for paragraph text
+
+Use the right font for the appopriate atmosphere and emotion
+
+Max of TWO fonts in a website and should be DIFFERENT in appearance and must make sense. one for headlines to show personality and one for body text for good readability. and get the font pairing right
+
+
+
+Color
+------
+You get colors from pictures of natural world around us, inspiration from other peoples work, brand color, logo, style guide, brand guideline, previous website
+you sample from them and fine tune them
+you can sample them using color eye dropper tool and generate palettes from sites like coolors.co
+
+to pick colors from images, blur the image enough to see only colors then sample them
+
+My simple trick on how to pic colors from pics, the dominant color becomes the background color, the second becomes the paragraph and least becomes the heading
+
+sometimes the colors picked, become dull so you need to fine tune them to get the right color compared to the unblured image
+
+to fine tune the color, adjust only the saturation and brightness based on the HSB color system
+Hue - the main color or the color itself
+Saturation - how much of the color itself
+Brightness - how light(white) or dark(black) the color is
+
+if you change the hue, youre changing the color
+if you remove the hue, the image is desaturated
+
+you can use colors to create contrast by using bright and dull colors together. this is based on light on darkness or darkness on white
+
+
+
+Images
+-------
+ways to make texts readable on images is to use overlays by adding a transparent color fill ontop of the image.
+
+also, you can tint the image if you want to use brand colors in the design, this is done by desaturating the image and adding a transparent color ontop of the image.
+
+overlays does not have to be the whole image, it can be some part of the image where there are texts like the navigation area
+
+you dont always have to use full images. in some instances, it is apppopriate to zoom in on the subject to focus on the emotion of the image like in movie  posters. this technique is called extreme crop
+
+another technique in using images is soft cropping
