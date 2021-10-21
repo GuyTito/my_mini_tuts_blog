@@ -71,6 +71,7 @@ also, you can tint the image if you want to use brand colors in the design, this
 
 overlays does not have to be the whole image, it can be some part of the image where there are texts like the navigation area
 
-you dont always have to use full images. in some instances, it is apppopriate to zoom in on the subject to focus on the emotion of the image like in movie  posters. this technique is called extreme crop
+you dont always have to use full images. in some instances, it is apppopriate to zoom in on the subject to focus on the emotion of the image like in movie  posters. this technique is called extreme crop. it tells the story with mystery in the image without using the full picture. make viewer solve the puzzle. this is good for human face, an object etc
+then there is another one called peeking thru the blinds thats good for landscapes and wide horizontal narrow vertical view
 
-another technique in using images is soft cropping
+another technique is soft cropping, where the edge is blurred/faded into the text area. it could be blurred, stretched etc. for the fade color, use a color from the image background
