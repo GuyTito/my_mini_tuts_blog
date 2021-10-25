@@ -3,21 +3,28 @@ Elements of Design
 
 Layout
 -------
-* Visual Hierachy: The use of tools such as sizes(bigger sizes equals higher importance. use of golden ratio for size measurement. there are exceptions, context matters), positioning(we read from top to down, left to right), negative/white space, color(saturation, hue, light/dark contrast, opposite colors for contrast), perspective(illusion of distance) to indicate importance/hierachy between elements
-Marketing Hierachy: attract,  interest, deliver message thru copy, call to action
+* Visual Hierachy: The use of tools such as sizes(bigger sizes equals higher importance. use of golden ratio for size measurement. there are exceptions, context matters.) 
+
+* positioning(we read from top to down, left to right. important things in top left of page)
+
+* negative/white space(feel comfortable to use them)
+
+* perspective(illusion of distance) to indicate importance/hierachy between elements
+
+* Marketing Hierachy: attract,  interest, deliver message thru copy, call to action
 
 https://zevendesign.com/designers-guide-to-visual-hierarchy/
 
 * Alignment
-The use of diffenrent types of grids to order items. The use of modular, column etc grids. use of rule of thirds, golden ratio to align items and visual hierachy
+The use of different types of grids to order items. The use of modular, column etc grids.
 
-* Proximity: group similar things together and different things far apart. like logo is far apart from navigation button. group call to action buttons on the hero page
+* Proximity: group similar things together and different things far apart. like logo is far apart from navigation buttons. group call to action buttons on the hero section
 
 
 
 Typography
 -----------
-typography is about personality. it can playful, strict and fancy
+typography is about personality. it can be playful, strict and fancy
 
 serif for print media cos of high resolution
 sans serif for screens cos of low resolution but this narrative is changing due to high resolution on screens
@@ -37,6 +44,9 @@ Use the right font for the appopriate atmosphere and emotion
 
 Max of TWO fonts in a website and should be DIFFERENT in appearance and must make sense. one for headlines to show personality and one for body text for good readability. and get the font pairing right
 
+in a particular domain, draw inspiration from other design works to see the popular fonts used in that domain
+
+
 
 
 Color
@@ -45,16 +55,15 @@ You get colors from pictures of natural world around us, inspiration from other 
 you sample from them and fine tune them
 you can sample them using color eye dropper tool and generate palettes from sites like coolors.co
 
-to pick colors from images, blur the image enough to see only colors then sample them
-
-My simple trick on how to pic colors from pics, the dominant color becomes the background color, the second becomes the paragraph and least becomes the heading
-
-sometimes the colors picked, become dull so you need to fine tune them to get the right color compared to the unblured image
+to pick colors from images, blur the image enough to see only colors then sample them. sometimes the colors picked, become dull so you need to fine tune them to get the right color compared to the unblured image
 
 to fine tune the color, adjust only the saturation and brightness based on the HSB color system
 Hue - the main color or the color itself
 Saturation - how much of the color itself
 Brightness - how light(white) or dark(black) the color is
+tint - how much white in the color
+shade - how much black in the color
+tone - how much gray in the color
 
 if you change the hue, youre changing the color
 if you remove the hue, the image is desaturated
@@ -72,7 +81,7 @@ low contrast in color pairings. to check low contrast, remove the hue(desaturate
 
 in applying colors, you can use the 60-30-10 rule for primary, secondary and accent colors. the primary for the background and its contrast for body copy. the accent for links of call to actions or very special things. the secondary for secondary stuff when no color can be used/found
 
-
+My simple trick on how to pic colors from pics, the dominant color becomes the background color, the second dominant becomes the paragraph and least becomes the heading/links etc. but this is not a hard rule to follow.
 
 
 
@@ -92,6 +101,22 @@ another technique is soft cropping, where the edge is blurred/faded into the tex
 
 sometimes, you can use strict edges between your text and images instead of fading. itll need to link to the text somehow. you can cut out some part of the image into the text are to create some sort of link like in the tile roof top hero example in the course
 
-
 rule of thirds: in a horizontal picture with a vertical main subject, place the subject at the intersection of the lines either at the left or right vertical lines. there should be a lot of space beside the subject.
 with a horizntal horizon, place it on either the top or bottom horizontal lines. there are always exceptions, context matters.
+
+gett images from pixabay, pexels, unsplash
+
+
+
+Design Tricks
+--------------
+
+Contrast: it can be used in colors(bright/dark), sizes(big/small), and weight(heavy/light)
+
+white/negative space: is technically a contrast. something over nothing. something in a pool of white space draws attention. white space can be any color not only white. Good design is as little design as possible. dont be afraid of white space, its good design. 
+
+repetition: it creates patterns which we as humans like. when one item may not be interesting on its own, try repetition like formation dance. reason why few colors are used in designs is because of repetition. it helps create pattern with colors, photography style, layout(zigzag) etc for benefits of products/services. patterns exist in natural world so it makes sense. when you use a non-traditional shape, it needs to be repeated to create consistency
+
+overlapping: makes the element pop out. usually images overlapping texts and vice versa. it creates tension. one popular way to overlap is to draw shapes behind images, other shapes
+a design decision needs to be intentional so that it is okay to bend or break the rules. eg if the overlap trick breaks the grid. this is because the background shape now becomes part of the main background which does not live on the grid. it is the text and images that do.
+
