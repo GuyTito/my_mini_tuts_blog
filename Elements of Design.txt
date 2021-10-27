@@ -123,3 +123,21 @@ a design decision needs to be intentional so that it is okay to bend or break th
 tension: it is the reason why overlapping, rule of thirds work because they tend to disagree with boring alignment. tension makes a design interesting, it gives it a little charge. it can be the flair which makes design break rules to make intentional decisions. like shapes not aligning to other or similar shapes just to prevent a boring design. angled shapes are very good for tension since they already not in conformity with the traditional rectangle screen. parallelogram, trapezoids, triangles to denote movement of speed since speed tends to cause tension.
 
 consistency: similar elements must have the same style, feel and look. consistency in alignment, colors, type, photos, icons, shape and form(curve shapes between sections). to ensure consistency in stock photos, pick them from the same contributor from the platform. for icons, pick them from the same pack. refer course notes on consistency
+
+
+
+
+
+Practice Design
+----------------
+
+Mimic method: at the beginning of learning any new skill, the best way to accelerate your growth is by copying the work of masters/experts. this is because the work of a master have good design principles built in them. so by copying/mimicking them, you practise good design habits. 
+three stages in mimicking = copying -> remixing -> creating
+thats why some works of great artist are influenced by other artists. people practise flat design today because someone invented it sometime ago. flat design was also influenced by simplicity. so you see, everthing you see is influenced by some other thing. we steal ideas from each other and its ok. trends in design. how many car manufacturers are there?😂😂😂
+it doesnt mean originality is bad but too much originality may make users not understand you. users like fresh ideas because they resemble others(recognise pattern) but in a new perspective👌.
+
+Inspiration: when you search for inspiration, search for modern designs. to make it simple, search from curated sites not from Google or some random blog. search from sites curated by designers or where designers meet. works agreed on by experts to be nice are indeed nice. examples of sites to get inspiration:
+https://webflow.com/blog/web-design-inspiration
+www.dribbble.com | www.lapa.ninja | land-book.com | behance.net|  | pinterest.com(on this site, once you find a good design, click on the more ideas icon to open a page of similar designs. you can save designs on this site and come back later for it esp when youre casually browsing the web)
+
+Mood board: create a mood board by first, using tags to search for inspiration from various sites. save the images of the ones you like, open figma, create a frame and put all the images in the frame, arrange them well. expand the fram to fit all the images, its good to use a black background color since most sites are white.
