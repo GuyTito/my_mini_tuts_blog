@@ -141,3 +141,6 @@ https://webflow.com/blog/web-design-inspiration
 www.dribbble.com | www.lapa.ninja | land-book.com | behance.net|  | pinterest.com(on this site, once you find a good design, click on the more ideas icon to open a page of similar designs. you can save designs on this site and come back later for it esp when youre casually browsing the web)
 
 Mood board: create a mood board by first, using tags to search for inspiration from various sites. save the images of the ones you like, open figma, create a frame and put all the images in the frame, arrange them well. expand the fram to fit all the images, its good to use a black background color since most sites are white.
+
+
+Places exist to get sketch resources like .sketch, figma files etc. Eg. sketchappsources, sketchrepo etc
