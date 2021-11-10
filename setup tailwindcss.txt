@@ -7,6 +7,6 @@ setup tailwindcss
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
-- add the ff in index.html
+- link stylesheet in index.html
 	<link href="/css/tailwind.css" rel="stylesheet" />
 - npm run dev
