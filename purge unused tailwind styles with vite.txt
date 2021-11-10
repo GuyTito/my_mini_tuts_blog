@@ -1,0 +1,7 @@
+- add the ff to "scripts" in package.json
+	"build": "vite build"
+- add paths of files that contain tailwind code to "purge" in tailwind.config.js
+	purge: ["./index.html", "./src/**/*.vue"] 
+- npm run build
+- build files are placed in a newly created dist folder.
+open the index.html in the browser to check out the page. in case the tailwind styles, images are not rendered, make sure to prefix src attributes with "/dist"
