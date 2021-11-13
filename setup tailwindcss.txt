@@ -1,12 +1,21 @@
 setup tailwindcss
-- npm init -y
-- npm install -D tailwindcss postcss autoprefixer vite
-- in package.json, under "scripts" add "dev": "vite"
-- npx tailwindcss init -p
-- add the ff in css/tailwindcss
+------------------
+
+npm init -y
+
+npm install -D tailwindcss postcss autoprefixer vite
+
+in package.json, under "scripts" add the ff
+	"dev": "vite"
+
+npx tailwindcss init -p
+
+add the ff in css/tailwindcss
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
-- link stylesheet in index.html
+
+link stylesheet in index.html
 	<link href="/css/tailwind.css" rel="stylesheet" />
-- npm run dev
+
+npm run dev
