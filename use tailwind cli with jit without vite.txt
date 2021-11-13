@@ -1,0 +1,25 @@
+use tailwind cli with jit without vite 
+---------------------------------------
+
+create index.html, src/style.css, build/style.css
+
+add the ff in index.html
+	<link rel="stylesheet" href="build/style.css">
+
+add the ff in src/style.css
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
+generate tailwind.config.js file
+	npx tailwindcss init
+
+add the ff in tailwind.config.js
+	mode:"jit",
+	purge:["./index.html",] // or "./*.html"
+
+npx tailwindcss ./src/style.css -o ./build/style.css -w -m
+
++--------------------------------------------+
+| NB: npx tailwindcss -h    to see help info |
++--------------------------------------------+
