@@ -35,4 +35,4 @@ To have tailwindcss intellisense,
 	npm init -y
 	npm install -D tailwindcss
 
-To host, (ignore node modules, package.json, package-lock.json to store on GitHub), src/style.css
+Ignore node modules, package.json, package-lock.json, (to store on GitHub) and src/style.css to deploy.
