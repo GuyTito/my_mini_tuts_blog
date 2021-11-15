@@ -22,7 +22,7 @@ need internet access to run next command
 
 npx tailwindcss ./src/style.css -o ./build/style.css -m -w
 
-open with Live Server VSCode extension for real-time development or open index.html file with Chrome(make sure src and href values are not preceded with forward slash)
+open with Live Server VSCode extension for real-time development or open index.html file with Chrome(make sure src and href paths are correctly linked to respective files)
 
 
 +---------+
