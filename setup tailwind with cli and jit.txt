@@ -11,16 +11,16 @@ add the ff in src/style.css
 	@tailwind components;
 	@tailwind utilities;
 
+need internet access to run next command
+
 generate tailwind.config.js file
 	npx tailwindcss init
 
 add the ff in tailwind.config.js
 	mode:"jit",
-	purge:["./index.html",] // or "./*.html"
+	purge:["./index.html",], // or "./*.html"
 
-need internet access to run next command
-
-npx tailwindcss ./src/style.css -o ./build/style.css -m -w
+npx tailwindcss -i ./src/style.css -o ./build/style.css -m -w
 
 open with Live Server VSCode extension for real-time development or open index.html file with Chrome(make sure src and href paths are correctly linked to respective files)
 
