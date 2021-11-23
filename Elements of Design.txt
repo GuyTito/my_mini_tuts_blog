@@ -144,3 +144,20 @@ Mood board: create a mood board by first, using tags to search for inspiration f
 
 
 Places exist to get sketch resources like .sketch, figma files etc. Eg. sketchappsources, sketchrepo etc
+
+
+The Project Process
+--------------------
+1. Project Brief: A short description of goals and details of the project. questions like what are we building, what's the goal, who's the target audience, what's the desired look and feel of the site, any specific functionality. It makes sure everyone is on the same page and headed towards the same direction. Setup an initial meeting with client to get answers to questions concerning the direction of the project. After that, put the questions and answers on paper and send to them to agree on the project brief. Check out the course project brief pdf template
+
+2. Moodboard: create one and share with client to know what they want. Better than going thru iterations back and forth. it helps define specific taste and feel, and visualize what they want. they could even show you examples of what they want. project brief serve as inspiration for moodboards
+
+3. Wireframes: wireframes define the skeleton of the site to nail down the layout of the site. NO colors, typography and images, design, just raw structure/skeleton. During the wireframing, its what do you want to be placed on the site and where like where to place the benefits of using product or service and how to structure it, 3 or 4 columns, hero section - image on left or right or background or no image only text, structure of navigation - nav links in middle or right, the  structure of site and structure of each section of the website, how the testimonials will be arranged. how to structure the footer. so its going to be something to look onto to design. Moodboards serve as the inspiration for wireframing and design. share with clients after use
+
+
+source and passage of inspiration(what you look onto to work on the current stage of the process)
+--------------------------------------------------------
+What the client want <- project brief <- moodboards <- wireframing <- Design <- Development
+
+
+At the end of each stage, you have to share the results to the clients and agree with them before you move on to the next stage so that they are in the loop and make sure they are in control and involved in the site. you need their feedback so that you dont go in the wrong direction.
