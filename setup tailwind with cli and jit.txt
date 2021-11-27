@@ -1,12 +1,12 @@
-use tailwind cli with jit without vite 
+use tailwind cli with jit 
 ---------------------------------------
 
-create index.html, src/style.css, build/style.css
+create index.html, style.css, tailwind.css
 
 add the ff in index.html
-	<link rel="stylesheet" href="build/style.css">
+	<link rel="stylesheet" href="./tailwind.css">
 
-add the ff in src/style.css
+add the ff in style.css
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
@@ -20,7 +20,7 @@ add the ff in tailwind.config.js
 	mode:"jit",
 	purge:["./index.html",], // or "./*.html"
 
-npx tailwindcss -i ./src/style.css -o ./build/style.css -m -w
+npx tailwindcss -i ./tailwind.css -o ./style.css -m -w
 
 open with Live Server VSCode extension for real-time development or open index.html file with Chrome(make sure src and href paths are correctly linked to respective files)
 
@@ -35,4 +35,4 @@ To have tailwindcss intellisense,
 	npm init -y
 	npm install -D tailwindcss
 
-Ignore node modules, package.json, package-lock.json, (to store on GitHub) and src/style.css to deploy.
+Ignore node modules, package.json, package-lock.json, (to store on GitHub) and style.css to deploy.
