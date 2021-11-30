@@ -18,7 +18,7 @@ generate tailwind.config.js file
 
 add the ff in tailwind.config.js
 	mode:"jit",
-	purge:["./index.html",], // or "./*.html"
+	purge:["./*.html",], // or "./index.html"
 
 npx tailwindcss -i ./tailwind.css -o ./style.css -m -w
 
@@ -35,4 +35,4 @@ To have tailwindcss intellisense,
 	npm init -y
 	npm install -D tailwindcss
 
-Ignore node modules, package.json, package-lock.json, (to store on GitHub) and style.css to deploy.
+Ignore node modules, package.json, package-lock.json, (to store on GitHub) and tailwind.css to deploy.
