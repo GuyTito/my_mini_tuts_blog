@@ -1,10 +1,10 @@
 use tailwind cli with jit 
 ---------------------------------------
 
-create index.html, input.css, output.css
+create index.html, tailwind.css, styles.css
 
 add the ff in index.html
-	<link rel="stylesheet" href="./output.css">
+	<link rel="stylesheet" href="./styles.css">
 
 add the ff in style.css
 	@tailwind base;
@@ -20,7 +20,7 @@ add the ff in tailwind.config.js
 	mode:"jit",
 	purge:["./*.html",], // or "./index.html"
 
-npx tailwindcss -i ./input.css -o ./output.css -m -w
+npx tailwindcss -i ./tailwind.css -o ./styles.css -m -w
 
 open with Live Server VSCode extension for real-time development or open index.html file with Chrome(make sure src and href paths are correctly linked to respective files)
 
