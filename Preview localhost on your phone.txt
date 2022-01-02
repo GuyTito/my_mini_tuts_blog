@@ -1,0 +1,9 @@
+Preview localhost on your phone
+
+- Turn on mobile hotspot in your phone settings menu
+
+- Search for the network on your PC and connect to it
+
+- Check the list of connected devices on your phone and click on your PC name. This will reveal the assigned IP address
+
+- Open a browser on your phone and visit that IP address with the port number your development server is listening on. And we’re done!
