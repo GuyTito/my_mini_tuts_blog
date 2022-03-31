@@ -1,0 +1,28 @@
+setup Frontend Mentor project (Vue JS)
+--------------------------------------
+
+- copy challenge name and create vue project
+npm init vue@latest
+
+- init a repo for the challenge and give nice repo description with GitHub Desktop. Get idea from README-template.md of challenge project
+- create 'dev' branch
+- copy vue-js-src-starter-template to replace default vue src folder
+- copy necessary challenge files/folders into vue project.
+   - "design" & "style-guide" folder -> root folder
+   - "images" files -> assets folder
+   - merge both gitignore files and add the ff
+   - "screenshot.png" -> root folder
+   - copy index.html content into the right files in the vue project
+   -other files/folders -> use your discretion
+   - update readme to reflect current state of project. copy from previous frontend mentor projects and current challenge readme and "readme-template" and update the vue readme
+
+- merge with main
+- publish repo
+- switch to dev branch
+- follow steps in ff to setup tailwindcss
+https://tailwindcss.com/docs/guides/vite
+
+- implement style guide
+- check up designs
+- code
+- Do this after launching website. update repo About section nicely on GitHub with tags and website
