@@ -15,11 +15,11 @@ npm init vue@latest
    -other files/folders -> use your discretion
    - update readme to reflect current state of project. copy from previous frontend mentor projects and current challenge readme and "readme-template" and update the vue readme
 
-- init a repo for the challenge and give nice repo description with GitHub Desktop. Get idea from challenge page on frontendmentor.io
-- create 'dev' branch
 - follow from step 2 in ff to setup tailwindcss and commit
 https://tailwindcss.com/docs/guides/vite
 
+- init a repo for the challenge and give nice repo description with GitHub Desktop. Get idea from challenge page on frontendmentor.io
+- create 'dev' branch
 - implement style guide and commit
 - merge with main and publish
 - check up designs
