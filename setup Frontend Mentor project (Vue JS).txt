@@ -9,7 +9,7 @@ npm init vue@latest
    - "design" & "style-guide" folder -> root folder
    - "images" files -> public/assets folder
    - favicon -> public folder
-   - merge both gitignore files and add the ff
+   - merge both gitignore files and remove dist from it
    - "screenshot.png" -> root folder
    - copy index.html content into the right files in the vue project
    -other files/folders -> use your discretion
