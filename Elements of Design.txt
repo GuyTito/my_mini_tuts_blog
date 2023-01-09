@@ -46,6 +46,9 @@ Max of TWO fonts in a website and should be DIFFERENT in appearance and must mak
 
 in a particular domain, draw inspiration from other design works to see the popular fonts used in that domain
 
+increase spaceing as font gets smaller or lighter.
+decrease spacing when it gets bigger and bolder.
+
 
 
 
