@@ -605,6 +605,7 @@ comments: {
 }
 
 
+
 thullo mongodb password
 thullo
 g0bVlK8XW1EvJAO1
@@ -639,17 +640,9 @@ it is ready when chicken becomes soft, broth thickens, oil settles on top.
 
 
 
-register
-login
-signout
-
-
-
 require('crypto').randomBytes(64).toString('hex')
 
 
-fix navigation overlapping main content on window resizing
-update the about me section
 navigation is basically data. ui style for desktop and mobile should have different code but the same data. navigation should not be a component. 
 
 
@@ -688,3 +681,15 @@ how to create a responsive element on figma
 
 
 
+things to fix in Thullo project
+---------------------------------
+- unique list per board id
+- delete list
+- landing page
+- authorization
+- adding and assigning members
+- search functionality
+- forgotten password
+- responsive
+- error handling relative to users
+- 
