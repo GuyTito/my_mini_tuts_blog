@@ -684,7 +684,7 @@ how to create a responsive element on figma
 things to fix in Thullo project
 ---------------------------------
 - unique list per board id
-- delete list
+- dropdown to rename and delete list
 - landing page
 - authorization
 - adding and assigning members
