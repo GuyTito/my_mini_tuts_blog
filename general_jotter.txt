@@ -683,7 +683,7 @@ how to create a responsive element on figma
 
 things to fix in Thullo project
 ---------------------------------
-- unique list per board id
+- unique list per board id same for card per list id
 - dropdown to rename and delete list
 - landing page
 - authorization
@@ -692,4 +692,71 @@ things to fix in Thullo project
 - forgotten password
 - responsive
 - error handling relative to users
+- avatars
+- delete cover images with deleted resource
+- cascade delete
+- switch card position with dragging
 - 
+
+
+
+app.stackup.dev
+tiktokdownload.online
+
+
+
+
+{
+   lists: {
+      byId: {
+         "list1": {
+            id: "list1",
+            title: "Come",
+            boardId: "board1"
+         },
+         "list2": {
+            id: "list2",
+            title: "Zome",
+            boardId: "board1"
+         },
+      },
+      allIds: ["list1", "list2"]
+   },
+   cards: {
+      byId: {
+         "card1": {
+            id: "card1",
+            title: "Come",
+            listId: "list1"
+         },
+         "card2": {
+            id: "card2",
+            title: "Zome",
+            listId: "list1"
+         },
+      },
+      allIds: ["card1", "card2"]
+   },
+}
+
+
+cards: {
+   "listId": {
+      "card1": {
+         id: "card1",
+         title: "Come",
+         listId: "list1"
+      },
+      "card2": {
+         id: "card2",
+         title: "Zome",
+         listId: "list1"
+      },
+   }
+}
+
+
+chatsonic
+dexivi mustbeit
+dexivi2862@mustbeit.com
+9#g70d3XPBq3
