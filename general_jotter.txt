@@ -685,17 +685,22 @@ things to fix in Thullo project
 ---------------------------------
 - unique list per board id same for card per list id
 - dropdown to rename and delete list
-- landing page
+- ** landing page
 - authorization
-- adding and assigning members
-- search functionality
-- forgotten password
-- responsive
+- ** adding and assigning members
+- ** search functionality
+- ** forgotten password
+- ** responsive
 - error handling relative to users
-- avatars
-- delete cover images with deleted resource
+- ** avatars
+- ** delete cover images with deleted resource
 - cascade delete
-- switch card position with dragging
+- ** switch card position with dragging
+- use the clickawaylistener once(reusable)
+- ** deploy
+- ** s3 bucket with cascade delete
+- ** demo account for easy login
+- ** my boards, my private and public boards
 - 
 
 
