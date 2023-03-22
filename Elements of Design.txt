@@ -82,7 +82,11 @@ too much saturation. just like music, you dont want to raise the volume of all i
 
 low contrast in color pairings. to check low contrast, remove the hue(desaturate) and adjust the saturation to create more contrast
 
-in applying colors, you can use the 60-30-10 rule for primary, secondary and accent colors. the primary for the background and its contrast for body copy. the accent for links of call to actions or very special things. the secondary for secondary stuff when no color can be used/found
+in applying colors, you can use the 60-30-10 rule for primary, secondary and accent colors. 
+- the primary will be used about 60% throughout the design. Choose one that is neutral and is easy on the eyes. Also it can be used for the background and its contrast for body copy. 
+- Accent Color refers to a color used to emphasize key parts of the UI, such as the active tab, focused input texts, checked boxes, etc. the accent is also used for links of call to actions or very special things. 
+- the 2ndary color should contrast with the main color to create visual interest. the secondary for secondary stuff when no color can be used/found
+background-text-button(60-30-10)
 
 My simple trick on how to pic colors from pics, the dominant color becomes the background color, the second dominant becomes the paragraph and least becomes the heading/links etc. but this is not a hard rule to follow.
 
@@ -157,6 +161,12 @@ The Project Process
 
 3. Wireframes: wireframes define the skeleton of the site to nail down the layout of the site. NO colors, typography and images, design, just raw structure/skeleton. During the wireframing, its what do you want to be placed on the site and where like where to place the benefits of using product or service and how to structure it, 3 or 4 columns, hero section - image on left or right or background or no image only text, structure of navigation - nav links in middle or right, the  structure of site and structure of each section of the website, how the testimonials will be arranged. how to structure the footer. so its going to be something to look onto to design. Moodboards serve as the inspiration for wireframing and design. share with clients after use
 Also, it is at this stage that you add content/copy to the wireframe of the site because they sort of determine the structure of each section of the site. the content is based on the goal of the page. you may not get the content from the client and in that situation you can look at competitors, pro copywriters. You can add coywriting to your services. Your content you add may help them get the idea of what is supposed to be there so that they can rewrite their own to suit their taste. Let clients know its a wireframe and not the final design.
+The wireframe focuses on the usability/ux and solves the functional requirements of the product before color is applied
+Grayscale first. You can lose a lot of time by applying colors too early. Focus on spacing and laying out elements before
+
+Contrast the text. Make it readable by contrasting with the background
+
+Don’t use pure gray or black. It is more natural to add some saturation. We rarely see pure gray colors in real life
 
 
 source and passage of inspiration(what you look onto to work on the current stage of the process)
