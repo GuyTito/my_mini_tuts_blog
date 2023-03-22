@@ -681,30 +681,6 @@ how to create a responsive element on figma
 
 
 
-things to fix in Thullo project
----------------------------------
-- unique list per board id same for card per list id
-- dropdown to rename and delete list
-- ** landing page
-- authorization
-- ** adding and assigning members
-- ** search functionality
-- ** forgotten password
-- ** responsive
-- error handling relative to users
-- ** avatars
-- ** delete cover images with deleted resource
-- cascade delete
-- ** switch card position with dragging
-- use the clickawaylistener once(reusable)
-- ** deploy
-- ** s3 bucket with cascade delete
-- ** demo account for easy login
-- ** my boards, my private and public boards
-- 
-
-
-
 app.stackup.dev
 tiktokdownload.online
 
@@ -765,3 +741,44 @@ chatsonic
 dexivi mustbeit
 dexivi2862@mustbeit.com
 9#g70d3XPBq3
+
+
+thumbsnap image hosting
+dexivi2862@mustbeit.com
+f@cW599!pjlf
+api key: 00003047548f72846cf692d5c35af937
+
+
+
+things to fix in Thullo project
+---------------------------------
+- unique list per board id same for card per list id
+- dropdown to rename and delete list
+- ** landing page
+- authorization
+- ** adding and assigning members
+- ** search functionality
+- ** forgotten password
+- responsive
+- error handling relative to users
+- ** avatars
+- delete cover images with deleted resource
+- cascade delete
+- ** switch card position (either with dragging or contextual menu)
+- use the clickawaylistener once(reusable)
+- ** deploy
+- s3 bucket with cascade delete
+- demo account for easy login
+- my boards, my private and public boards
+- delete board
+- 
+
+
+
+
+when you forget a tutorial you learnt sometime ago, dont go looking for a new video to learn from. instead, watch the old videos that made you understand it and read the code you wrote along side them.
+
+
+
+
+
