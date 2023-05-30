@@ -1,0 +1,96 @@
+Docker notes
+=============
+images are packages with all the deps and env variables.
+container is a running instance of a docker image.
+
+docker images ==> lists all available docker images locally
+
+docker ps ==> lists running containers
+
+docker pull {name} ==> pull latest version of an image from the docker registry (dockerbub).
+
+docker pull {name}:{tag} ==> pull an image with a specific tag
+
+docker run {name}:{tag} ==> creates a container from the given the image and starts it. if image is not available locally, it'll pull from dockerub
+
+docker run -d(or --detach) {name}:{tag}  ==> runs container in the background and prints the container ID without blocking the terminal
+
+docker logs {container ID} ==> view logs from running a particular container
+
+docker can run several versions of the same app at once
+
+docker stop {container ID} ==> stop a particular container
+
+docker run -d -p(or --publish) {host_port}:{container_port} {image}:{tag} ==> publish/expose a container's port to the host in addition to running it in the background
+
+only one service/container can run on a specific port on the host
+
+but its standard to use the same port on your host as container is using
+
+docker run command always creates new containers. it does not reuse containers.
+docker ps -a ==> lists all containers created including running and exited ones
+
+docker start {container ID} ==> start one or more stopped containers
+
+in all of the commands, container IDs can be replaced by the auto-generated container names
+
+docker run --name {container_name} nginx ==> assign name to container
+
+docker stop {container ID} {container_name} {container ID} ==> stop multiple containers
+
+
+Structure of a dockerfile
+==========================
+the dockerfile contains the instructions/directives used to create a docker image. its like a director for whole project when its running as a container. so a container is its own isolated environment where node is needed, npm i is run to install deps etc. alpine is a node image variety. it runs sequentially just like how we will run our project traditionally.
+
+
+FROM ==> there is a base layer we need for out app to run. for eg. the most basic need for a node app is node itself. so this directive makes sure that the base  of the app (node) is avalable for it run 
+
+RUN ==> in our project, there are some commands that need to run to ensure the running of the app. e.g npm i to install the deps. the RUN directive runs this command
+
+COPY ==> copies the relevant app's code into the container
+
+WORKDIR ==> changes the current working directory to run the app
+
+CMD ==> the instruction that starts the app when the container starts running
+
+
+
+docker build -t(or --tag) node-app:1.0 . ==> builds an image from a dockerfile. -t sets a name and optionally a tag in the "name:tag" format for the image. The fullstop at the end of the docker build command tells Docker that it should look for the Dockerfile in the current directory.
+
+
+So to dockerise your own app, write dockerfile -> build docker image -> run as docker container
+
+
+docker rm <the-container-id or container-name> ==> removes or deletes a stopped container 
+
+You can stop and remove a container in a single command by adding the force flag to the docker rm command. For example: docker rm -f <the-container-id>
+
+docker push guytito/getting-started:tagname ==> push your image to the dockerhub within your namespace(usually username)
+
+docker login -u YOUR-USER-NAME
+
+
+dockerhub
+guytito
+titodocker
+
+
+docker volume create todo-db ==> create a volume called todo-db stored on the host machine, not inside a specific container. Docker volumes are managed by Docker and are independent of any particular container. They provide a way to store and share data between containers or persist data even if the containers are stopped, removed, or replaced. The volume can be mounted into one or more containers as needed.
+
+
+docker run -dp 3000:3000 --mount type=volume,src=todo-db,target=/etc/todos getting-started  ==>  The command runs a Docker container based on the "getting-started" image, maps port 3000 between the container and host, and mounts a volume named "todo-db" to store persistent data in the "/etc/todos" directory inside the container.
+
+
+docker volume inspect todo-db ==> The command provides information about the Docker volume named "todo-db". It retrieves details such as the volume's name, driver used, mountpoint (the location on the host where the volume is mounted), and other metadata.
+
+
+
+
+
+
+
+
+
+
+

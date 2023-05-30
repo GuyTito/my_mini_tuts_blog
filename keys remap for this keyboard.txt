@@ -1,0 +1,5 @@
+﻿SC07D::Backspace
+SC079::Space
+SC070::Space
+SC07B::Space
+SC073::Shift

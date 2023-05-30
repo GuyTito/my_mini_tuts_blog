@@ -1,0 +1,199 @@
+Testing Javascript notes
+=========================
+
+-toEqual- compares values. aka deep equality. use it to check the value of an object
+
+*toBe* compares references. aka strict equality(===). uses Object.is() to test exact equality.
+
+
+You should write integration tests whenever it’s fundamental to ensure that multiple parts(functions) of your program can work together or that they integrate correctly with thirdparty software.
+
+Nonetheless, it’s important to highlight that the goal of an integration test is not to test any third-party pieces of software( such as database adapters) themselves. The purpose of an integration test is to check whether you are interacting with them correctly.
+Integration tests are written to ensure that different parts of an application can work together. They verify whether you are using third-party libraries appropriately, such as database adapters. These tests act through your own software, but they may need access to external components, like a database or the filesystem, to set up a scenario and to check whether your application produced the desired result.
+
+
+End-to-end tests run against all layers of a program. Instead of directly calling functions, they interact with your application as a user would: by using a browser or sending HTTP requests, for example. They consider the application to be a “black box.” These tests produce the strongest quality guarantees since they most closely resemble real use-case scenarios.
+
+I don’t like absolute thinking. The word always is hazardous, and so is the word never.
+When deciding whether you should write tests, consider that the longer a specific piece of code will survive, the more critical it is to add tests for it.
+The value a test produces depends on how often it runs. If a test saves you five minutes of manual testing, by the time you’ve run it for the 15th time, you’ll have saved an hour
+
+
+All tests follow a similar formula: they set up a scenario, trigger an action, and check the results produced. This pattern is easy to remember by using the three As mnemonic: arrange, act, and assert.
+
+
+Ideally, tests should be as small as possible and focus on checking a single aspect of the unit under test.
+
+
+The fewer assertions per test you have, the more granular the feedback, and the less time it takes for you to identify defects.
+
+
+Ideally, your assertions should accept a single result. If your assertions customarily allow many results, it can be a sign that your code is not deterministic or that you don’t know it well enough. Loose assertions make it easier for tests to pass, but they make those tests less valuable because they might not fail when the application produces invalid output. Writing tighter assertions makes it harder for your tests to pass when the application code has problems, making it easier to catch bugs.
+
+
+
+An assertion that, for example, verifies whether an array includes a value usually tells that you don’t know what the entire array should look like. Ideally, you should have written an assertion that checks the whole array.
+
+
+Negated assertions—assertions that ensure an output does not match another value—also generate loose assertions.
+Avoid writing negated assertions whenever possible.
+
+
+To make it easier to control how loose your assertions are, Jest has asymmetric matchers. Asymmetric matchers allow you to determine which aspects of a particular output Jest should validate loosely and which ones it should validate tightly.
+
+
+Using precise assertions enables you to improve the quality of your test’s feedback by indicating what kind of output Jest should produce.
+Tests with precise assertions are way easier to read and take less time to fix because it’s easier to understand what went wrong. 
+
+
+To get access to more precise assertions, we will use jest-extended. The jestextended module extends Jest’s assertions, providing you with even better and more flexible checks.
+
+
+Whenever possible, create separate utility functions for your tests instead of just reusing the application’s code. It’s preferable to have a bit of duplication or hardcoded expected results than to have tests that never fail.
+
+
+Mocks, stubs, and spies are objects used to modify and replace parts of your application to ease or enable testing. As a whole, they’re called test doubles.
+* Spies record data related to the usage of a function without interfering in its implementation.
+* Stubs record data associated with the usage of a function and change its behavior, either by providing an alternative implementation or return value. A stub replaces the original implementation of a function.  Stubs, just like spies, track the usage of a function so that you can assert on it later.
+* Mocks change a function’s behavior, but instead of just recording information about its usage, they have expectations preprogrammed.
+
+
+we use pino to log operations. we want to test the addToInventory function to enforce that a function properly logs items.
+
+logging is a side effect that you can’t easily observe from outside the addToInventory function. How will you ensure that the logging happened if your tests can’t access it?
+To solve this problem, you’ll use a spy. A spy can record any calls to a function. In this case, you’ll use a spy to track calls to the logger.logInfo function so that you can assert on these calls later.
+
+Any operation that is not directly related to the final output of the function is called a Side Effect. A side effect in a function refers to any change or action that occurs outside the function's scope or context. A side effect occurs in a program whenever you use an external code in your function—which, as a result, impacts the function's ability to perform its task. A few more classic cases of the side effects are,
+Mutating(changing) the input itself.
+Querying/Updating DOM
+Logging(even in the console)
+Making an XHR/fetch call.
+Writing to a file or database
+Modifying the state of a global variable
+Throwing an exception:
+
+We need to mock or use a spy in scenarios where we want to isolate and control the behavior of a specific part of the system, such as a dependency or a side effect. This is often necessary in unit testing, where we want to test a single function or module in isolation from the rest of the system.
+
+Mocking and spying are useful techniques for simulating the behavior of a dependency or a side effect without actually invoking the real implementation. This can be useful for testing scenarios where the real implementation is slow, unreliable, or unavailable, or where we want to test edge cases or error conditions that are difficult to trigger in the real system.
+
+When testing if logging occurred, we need to mock or spy on the logging framework or library to capture the log messages and verify that they match our expectations. This is necessary because logging is a side effect that occurs outside the scope of the function being tested, and we cannot easily observe the log messages from outside the function.
+
+We don’t want to test if the logging actually happens. Testing the logging library (pino) is the responsibility of the library’s authors. In the examples above, I’ve chosen to trust that the logger works. Instead of adding redundant tests, I simply check if the logging methods are called with the expected arguments.
+
+Verifying calls instead of the logger’s actual behavior simplifies the testing and makes it quicker, but it does not necessarily guarantee that the unit under test logs any information.
+Verifying the logging itself would depend on an end-to-end test. A test of that kind would have access to the files or streams to which the logger writes.
+
+
+npm t -- -t "logging" ==> run tests that matches the name "logging" whether the describe/it/test block
+
+npm t server.test.js ==> run tests only in server.test.js
+
+
+spies do not replace the actual method that you are spying on. Instead, they wrap that method in a spy and allow calls to pass through.
+
+A few different ways to create a test double. To choose which one you are going to use, think about what is it that you
+are trying to “mock.”
+* If you are mocking an object’s property, you should probably use jest.spyOn.
+* If you are mocking an import(imports with destructuring), you should probably use jest.mock.
+* In case you have to use the same replacement in multiple test files, you should, ideally, use a manual mock placed on the __mocks__ folder.
+
+
+Having few tests with stronger quality guarantees is better than having many tests that don’t instill confidence
+
+You should test only the software that you write. Don’t test third-party software.
+What you don’t want to do in this case is test if knex is inserting items in the database. That’s the responsibility of the library’s authors.  In this case, you have the following two options: a) replace knex with a test double, and check if it’s called correctly; or b) spin up a test database, call createCart, and check the database to see if the row was inserted as you expected.  In neither of these cases do you test knex itself. You always focus on your use of the library. Testing other people’s libraries is a wasted effort.
+
+As a rule of thumb, if mocking a dependency is too complicated, don’t mock it.
+
+Comparing the difficulties of mocking knex and the small benefits it produces with how easy it is to write an integration test and the immense value it generates, it’s clear that an integration test is the best option for this scenario.
+
+When you mock a particular layer of your application, you prevent your tests from reaching everything underneath it.
+Consider, for example, that you have a route that uses the cartController module. The cartController uses a notifier module, which, in turn, calls a third-party API.
+By mocking CartController, you are choosing not to test all the layers underneath it; you are not running code that’s in the notifier module or in the third-party API.
+The more superficial the layer you choose to mock, the more you choose not to test. The more you want to hide complexity, the earlier you should mock.
+
+When in doubt, choose integration tests
+
+ A very isolated unit test would mock knex and check only whether addItem uses knex correctly.
+ An integration test would call addItem and check the database.
+ A full-blown end-to-end test would spin up the server, open a browser, click the button that adds items to a cart, and check the cart listing page
+
+Integration tests usually balance cost and benefit better, so, whenever in doubt, choose integration tests.
+
+By measuring which parts of your code are covered and, most importantly, which aren’t, you can make sure that all the possible branches of execution run during your automated testing process.
+
+Instead of using code coverage as a metric on its own, I use it to understand which parts of my program I’ve forgotten to cover and to ensure that my team is always progressing toward more coverage, not less. 
+
+
+
+its not possible to just test updateItemList like the way we have been doing so far. Because updateItemList depends on the page’s markup, you must set the innerHTML of the document used by Jest’s JSDOM by reading the index.html file syncronously.
+
+
+Besides window, document is also global within your tests. You can save yourself a few keystrokes by accessing document instead of window.document.
+
+
+As you write frontends, you will soon notice that the DOM structure will frequently change without affecting the overall functioning of the application. Therefore, in the vast majority of situations, you should avoid coupling your tests to the DOM structure. Otherwise, you will generate extra costs by having to update tests too frequently, even if the application still works.
+
+
+make robust element queries by the characteristic on which you want to assert: their content for example for a paragraph. 
+
+
+Your selectors, just like your assertions, should be based on what constitutes an integral part of what an element should be. An id, for example, is arbitrary, and, therefore, finding elements by their ids will tightly couple your tests to your markup. Instead of finding elements by arbitrary properties, you should find elements by what matters to your users, like their text or their role. By using robust and easy-to-write selectors, your tests will be much quicker to write and much more resilient to changes that do not affect whether your application works as it should.
+
+
+Even though it’s okay to manually construct events so that you can get quick feedback while you iterate, that’s not the kind of test that cre- ates the most reliable quality guarantees. Instead, to simulate your user’s behavior much more accurately—and, therefore, create more reliable guarantees—you can either dispatch native events using dispatchEvent or use third-party libraries to make this process more convenient. When it comes to catching errors, this resemblance will make your tests much more valuable, and because you’re not trying to manually reproduce an event’s interface, they’ll cause much less maintenance overhead.
+
+
+The more your tests resemble the way your software is used,
+the more confidence they can give you.
+
+
+By learning how to test the History API, you’ll learn:
+1. how to manipulate event listeners with test doubles and 
+2. how to execute assertions that depend on events triggered asynchronously. 
+This knowledge is useful not only: 
+1. for testing features that involve the History API but also 
+2. for whenever you need to interact with listeners to which you don’t necessarily have access by default.
+
+
+JSDOM’s history implementation has a bug in which the pushed state will not be cloned before being assigned to the state. Instead, JSDOM’s history will hold a reference to the object passed. Because you mutate inventory as users add items, the previous frame in JSDOM’s history will contain the latest version of the inventory, not the previous one. Therefore, reverting to the former state won’t work as it should. To avoid this problem, you can create a new data.inventory yourself by using { …data.inventory }. JSDOM’s implementation of DOM APIs should never differ from the ones in browsers, but, because it’s an entirely different piece of software, that can happen.
+
+
+Because history.back happens asynchronously, you must also create a handler you’ll use for the window’s popstate event, which is dispatched when history.back finishes. Because history.back is asynchronous, as I have already mentioned, you must perform your assertions only after the popstate event is triggered.
+
+
+after some studies, I've realised that done callback and async/await do not replace each other. there are scenarios when to use each of them. done callbacks are used when await keyword does not have any effect on the unit of code. we use the done callback only to indicate to jest that the test has finished. read Jest doc on testing async to learn more. Also, read this https://www.pluralsight.com/guides/test-asynchronous-code-jest
+If a test is async and you dont handle it, jest throws timeout error after the default 5seconds. this is also a way to know that the test is async even tho we never wrote async/await when implementing the undo feature.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

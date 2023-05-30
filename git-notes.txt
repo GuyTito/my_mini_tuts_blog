@@ -1,0 +1,159 @@
+git notes
+==========
++ git config --global user.name "my name" => set name for global config of git. same for email
+
++ git init => initilise an empty repo in empty folder
+
++ ls -la => list files that start with a dot in the current dir. using it to check for the presence of the .git file. it proves that the folder has been initialise with git
+
++ ls -l .git => enter .git dir and list files
+
++ git add hello.txt => adds the file, hello.txt to the staging area to be tracked by git and added to the next commit
+
++ git status => use it to get the current working tree and pending changes. the working tree is the area outside of .git dir
+
++ git commit => commit changes with a message in the editor of your choice
+
++ Evry git project consists of threee sections: git dir, working tree and staging area. git dir: history of all files and changes; working tree: current state of project and changes made; staging area: changes to be committed.
+
++ a commit is a snapshot of the state of the project at the moment.
+
++ modify(add, modify, delete) -> stage -> commit
+
++ git commit -m "message" => commit with message written on cli
+
++ git config -l => check current git configuration
+
++ git commit -a -m "message" => A shortcut to stage any changes to tracked files and commit them in one step. it skips the staging area. only works on tracked files. use it for small changes with short explanation
+
++ git log => shows history of commits
+
++ the HEAD alias shows the current state of the project or latest commit
+
++ git log -p => works just like git log including lines of changes/patches made
+
++ git show <commit ID> => shows detailed changes with a specific commit id
+
++ git show => shows detailed changes with latest commit
+
++ git log --stat => adds stats to git log
+
++ git diff => shows unstaged changes 
+
++ git add -p => shows changes made before staging. the p stands for patch i.e changes
+
++ git diff --staged => shows changes that are staged but not committed
+
++ git rm 'file.name' => delete file from repo and ready to be committed
+
++ git mv 'old_name.txt' 'new_name.txt' => rename files and ready to be committed
+
++ git restore <file> => to discard changes in working directory
+
++ git restore --staged <file> => to unstage
+
++ git commit --amend => used to amend previous commit message. should not be used on public repos
+
++ git revert HEAD => undos the previous commit and creates a new commit for the rollback
+
++ git log -2 => shows the immediate two commits
+
++ git revert <commit ID>  => undos the a particular commit with ID and creates a new commit for the rollback
+
++ git branch => lists of branches in the repo
+
++ git branch <new-branch-name> => creates new branch
+
++ git checkout <name-of-another-branch> => switches to another branch
+
++ git checkout -b <new-branch-name> => create new branch and switch to it
+
++ git merge <branch name> => merge branch with current branch
+
++ git log --graph --oneline => shows graph of history of commits
+
++ git branch -d <branch-name> => delete branch
+
++ git clone <repo-url> => download copy of repo
+
++ git push => upload changes to remote
+
++ git config --global credential.helper cache => cache your credentials for a time window (default is 15mins)
+
++ git pull => download latest changes from remote and merge with local copy(git fetch + git merge)
+
++ git remote -v => remote origin urls for fetching and pushing 
+
+remote repos has a default name assigned to them known as origin
+
++ git remote show origin => get more info about a remote repo
+
++ git branch -r => provides list of branches in remote repo
+
++ git fetch => see all of the current branches and changes in remote repository
+
++ git log origin/master => see commit history of master branch of remote repo
+
++ git merge origin/master => merge remote changes into local repo
+
++ git log --graph --oneline --all => shows graph of history of commits for all branches
+
++ git push -u origin <branch-name> => push branch to origin. u stands for upstream
+
++ git rebase <branch-name> => set the base of the current branch to be branchname. for current branch to share common HEAD with branchname. avoiding 3-way merge cos we want linear history which helps with debugging. e.g. current branch is refactor and we do git rebase master, refactor now shares common base/HEAD with master letting us avoid a split history and 3-way merge which helps us achieve a linear history with fast-forwarding
+
++ git push --delete origin <branch-name> => deletes remote branch
+
++ git rebase --continue => continue a rebase which may have been interrupted by a conflict
+
++ some best practices
+  1. sync your repo before starting work
+  2. avoid having very large changes that modify a lot of different things. split them into their own commits no matter how small.
+  3. when working on a big change, it makes sense to have a separate feature branch
+  4. regularly merge changes made on the master branch back onto the feature branch to avoid merge conflicts
+  5. when maintaining two versions of a project, have the latest version of the project in the master branch, and the stable version of the project on a separate branch
+  6. you should not rebase changes that have been pushed to remote repos. rebase is good for local repos
+
++ workflow collaboration for small changes on github is fork -> make changes -> commit -> create pull request
+
++ but for larger changes, typical workflow is fork -> git clone -> create branch -> make changes -> commit -> git push -u origin <branch-name> -> create pull request (check for mergeability before submitting) -> wait for feedback 
+
++ in case we are to improve our pull request, we sync our project. make changes and git push. the commit is added to the pull request. if we need to make another pull request, we need to create another branch. pull request guidelines should follow the project's contributing guidelines.
+
++ pull requests are made on github not locally
+
++ now the contributing guidelines says we present only one commit in our pull request. we have multiple commits, what do we do? we squash our commits/changes using the interactive version of git rebase -> git rebase -i master. this will open an editor with lists of commits from oldest to most recent. we squash commits by editing the first word. various commands are listed as comments in the editor. squashing opens another editor with the combined commit messages to edit our new squashed commit message
+
++ git may reject our push after squashing commits cos it cannot be fast-forwarded. what we can do is force the push/update using
+git push -f
+Now our pull request will have only one commit as stated in the contributing guidelines
+
++ git commit -a --amend => stage and amend previous commit including message
+
++ git rm –cached <filename> => untrack a file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
