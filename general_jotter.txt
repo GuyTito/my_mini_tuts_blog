@@ -775,8 +775,127 @@ things to fix in Thullo project
 
 
 
-
 when you forget a tutorial you learnt sometime ago, dont go looking for a new video to learn from. instead, watch the old videos that made you understand it and read the code you wrote along side them.
+
+
+
+paypal developer
+xemaxim824@cyclesat.com
+lGoB6Tj190&8
+
+personal sandbox 
+sb-q7myo25389308@personal.example.com
+2W4,?cXg
+
+merchant sandbox 
+sb-6bml625389196@business.example.com
+D%4z$k*7
+
+
+i need to start building and sharing while networking on platforms. I couldnot do this because i was afraid i did not know certain technologies like fullstack, ui/ux etc and some confidence. Now, while building and sharing, I can respond and talk to anyone who would want me to work with them because I got the skills now.
+By this approach, i want to be building one project per week, one article per week, two weeks maximum. Proper and full planning before starting a project or a week. checking out by the end of the week if ive reached my goals. Goal setting and measurement.
+For example, 1st week of april, i want to build a simpler clone of tiktok because i use it alot. learn testing with jest. write an article about my journey. review at least one typescript project on github. share progress on platforms. network with other developers.
+Projects should be everyday apps i use, challenging ones. tiktok clone, bolt, google docs, calendar, homepages & landing pages, ai apps, etc. designs you see online, on dribbble, awwwards, etc.
+Monday is for planning and setting goals for the week. what project, articles, code reviews, what to learn etc.
+Sunday is checking out goals.
+So that at the end of april, i should have at least two projects, 4 articles, farmiliar/confident online, applied for many jobs, contributed to open source
+A flexible phase where i can jump on another project while i pause or work on current project.
+
+
+A day's schedule is gonna be buidling, sharing, networking, applying, code reviews, reading artilcles, learning comes last. 
+
+
+
+official_pretty_precious
+
+
+
+
+Pokebook App
+* responsive -/
+* Components everything as shown in the requirements -/
+* add micro-interactions -/
+* show info to user like button hover and press effects -/
+* localstorage for themes -/
+* search, autocomplete -/
+* error page -/
+* tests
+* align logo with rest of top bar -/
+* 
+
+
+
+
+  /* background-image: url(${MainBg}); */
+background: linear-gradient(270deg, #FFFFFF 0%, rgba(217, 217, 217, 0.06) 51.04%, #FFFFFF 100%);
+/* background-color: ${props => `${props.themeColor}`}; */
+
+
+
+
+npm t -- -t "logging" ==> run tests that matches the name "logging" whether the describe/it/test block
+
+npm t server.test.js ==> run tests only in server.test.js
+
+
+block dht for male pattern baldness use finasteride 
+growing tomatoes at home
+
+
+A language model is a mathematical function that gives the probabilities of occurrence of different possible outcomes over sequences of words.
+
+
+
+You can find organizations to contribute to even before they are officially announced. I suggest following the steps below:
+
+1. Write down what skills/ tech stack you know currently
+2. Write down the skills/ tech stack you want to learn
+3. Filter organizations based on these two criteria
+4. Look through the projects in the organization to find what interests you
+5. List down multiple projects across organizations that fit these criteria
+
+
+1. javascript, react.js, typescript, html, css, express.js(node.js), mongodb, styled-components, tailwindcss etc
+2. python, postgresSQL, machine learning, data science, cloud-native computing, graphql, trpc,  
+
+
+
+lfx mentorship
+1. I am a self-taught frontend developer working hard to land my first tech job.
+
+2. Some of my goals and aspirations are to get a fulltime goodpaying software developer job, contribute to open source, network with people in the industry, mentor and help other people to achieve their dreams.
+
+3. I am interested in this mentorship program because I see it as a great opportunity to level up my skills to become a better software developer, improve my communication and collaborative skills, access the great network of mentors and other contributors, the credibility and prestige associated with the Linux Foundation, and use the avenue provided to get started in open source.
+
+4. As a self-taught developer, I have the discipline to commit all my time, energy and resources to goals I want to achieve. And contributing to open source is one of them. I will do whatever it takes to graduate this program successfully.
+
+
+sumatra pdf dark mode
+======================
+FixedPageUI
+TextColor = #eeeeee
+BackgroundColor = #111111
+
+
+
+learn graphql and brush up on vue including react projects
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

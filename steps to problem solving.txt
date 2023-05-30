@@ -9,7 +9,8 @@ Write down the steps of your solution in plain English(pseudocode). This is the 
 
 - Now that you have solved the problem, implement your solution in code i.e represent the above steps in programming syntax. The syntax should be simple, mechanical even if it looks unrefined. 
 
-- If you can't implement the solution, finish with the easier parts. Then come back and tackle it. If not, look for implementations outside.
+- If you can't implement the solution, finish with the easier parts. Then come back and tackle it. If not, look for implementations outside. Don't try to solve the problem all at once. Solve and test one at a time untll all cases, all of the problem is solved little by little. A good programmer doesn't write a program all at once. Instead, the programmer will write and test the program in a series of builds. Each build adds to the previous one. The high-level algorithm will guide us in this process.
+A good programmer works incrementally, add small pieces one at a time and constantly re-checking the work so far.
 
 - Test your solution. Test all possible cases and edge cases. Adapt your code to them. Make improvements to the code's running time i.e its efficiency and performance in terms of large input (n) which is an important subset of a worst case scenario.
 
