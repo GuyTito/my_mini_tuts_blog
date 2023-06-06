@@ -168,6 +168,62 @@ If a test is async and you dont handle it, jest throws timeout error after the d
 
 
 
+"collectCoverage": true, as an entry in the jest.config.js to always run the coverage running tests
+
+For testing a react in bite app with jest
+============================================
+
+yarn add -D
+@testing-library/react
+@testing-library/jest-dom
+@testing-library/user-event
+jest
+jest-environment-jsdom
+@types/jest
+@babel/preset-env
+@babel/preset-react
+@babel/preset-typescript
+identity-obj-proxy
+
+Javascript
+yarn add -D @testing-library/react @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom @babel/preset-env @babel/preset-react identity-obj-proxy
+
+Typescript
+yarn add -D @testing-library/react @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom @types/jest @babel/preset-env @babel/preset-react @babel/preset-typescript identity-obj-proxy
+
+jest-setup.ts
+import "@testing-library/jest-dom";
+
+jest.config.js or “jest” as entry in package.json
+"jest": {
+  "testEnvironment": "jsdom",
+  "setupFilesAfterEnv": [
+    "<rootDir>/jest-setup.ts"
+  ],
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "src/**/*.{ts,tsx,js,jsx}",
+    "!src/**/*.d.ts"
+  ],
+  "moduleNameMapper": {
+    "\\.(css|less)$": "identity-obj-proxy"
+  }
+}
+
+babel.config.cjs
+module.exports = {
+presets: [
+    "@babel/preset-env",
+    "@babel/preset-typescript", //remove in js
+    [
+      "@babel/preset-react",
+      { runtime: "automatic"
+      }
+    ],
+  ],
+};
+
+
 
 
 
