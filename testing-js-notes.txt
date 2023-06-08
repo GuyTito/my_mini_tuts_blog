@@ -168,7 +168,7 @@ If a test is async and you dont handle it, jest throws timeout error after the d
 
 
 
-"collectCoverage": true, as an entry in the jest.config.js to always run the coverage running tests
+
 
 For testing a react in bite app with jest
 ============================================
@@ -210,6 +210,10 @@ jest.config.js or “jest” as entry in package.json
   }
 }
 
+
+"collectCoverage": true, as an entry in the jest.config.js to always run the coverage running tests
+
+
 babel.config.cjs
 module.exports = {
 presets: [
@@ -225,11 +229,10 @@ presets: [
 
 
 
+using the global test and describe methods, you can use test.only() and test.skip() to run only a specific test or skip that test.
 
 
-
-
-
+const { getByText } = render(<App name={name} />); ==> we can use getByText from the render method scoped to a specific component so that there will be no need for the screen method for the whole document like this <== const text = getByText(`Hi ${name}`);
 
 
 
