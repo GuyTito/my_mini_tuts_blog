@@ -881,6 +881,120 @@ BackgroundColor = #111111
 learn graphql and brush up on vue including react projects
 
 
+hrms
+=====
+
+staging 
+--------
+link
+hrm-v3.enyata.com
+
+admin account
+email: isaac@enyata.com
+password: 123456789
+
+employee account
+kwabenaagyapong@enyata.com
+2hrd78964
+
+
+production 
+-----------
+link
+https://ghana-hrms.enyata.com/admin
+
+Password: 744743484387743843
+Email; nancy@enyata.com
+
+
+
+sugggestions
+-------------
+- single onboarding populate with applicants details automatically
+
+- automatically create account for applicant after applying
+
+- security risk with storing user details and token on localstorage. suggest better way
+
+
+
+
+
+MERIFOT PROJECT X
+==================
+- make label same size as input so that floating the label to the top is not affected by flex
+- number spinner, search cross with margin-right 15px
+- color variables
+- 
+
+
+
+kill a process using a port
+lsof -i tcp:<PORT>
+kill -9 <PID>
+
+lsof -i tcp:6006
+
+
+
+g1tm0h@
+pat: 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
+
+
+solve tests failings
+create pr for reset pages
+new react-router
+try table component
+brush up on tailwind
+react error boundary
+
+
+sprint planning
+================
+account for the ff in addition to main tasks:
+- testing
+- reviews
+- bugs
+- research
+- realities
+there should be additional or misc time/points
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
