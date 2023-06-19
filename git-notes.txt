@@ -132,7 +132,7 @@ Now our pull request will have only one commit as stated in the contributing gui
 
 + git rm –cached <filename> => untrack a file
 
-
++ The command "git branch -M main" is used in Git to rename the current branch to "main." 
 
 
 
